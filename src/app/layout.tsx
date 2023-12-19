@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
-import { Be_Vietnam_Pro, Inter } from "next/font/google";
-import "./globals.css";
 import { Header } from "@/components/Header";
+import clsx from "clsx";
+import type { Metadata } from "next";
+import { Be_Vietnam_Pro } from "next/font/google";
+import "./globals.css";
 
 const beVietnamPro = Be_Vietnam_Pro({
   subsets: ["latin"],
@@ -20,7 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full">
-      <body className="text-large min-h-full bg-white-97 font-normal leading-normal text-grey-15">
+      <body
+        className={clsx(
+          "text-large min-h-full bg-white-97 font-normal leading-normal text-grey-15",
+          beVietnamPro.className,
+        )}
+      >
         <Header />
         {children}
       </body>

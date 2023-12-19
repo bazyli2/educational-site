@@ -6,7 +6,7 @@ function Banner() {
   return (
     <div className="flex items-center justify-center gap-6 rounded-lg bg-orange-50 py-5  text-white-100">
       Free Courses 🌟 Sale Ends Soon, Get It Now
-      <ArrowRight />
+      <ArrowRight className="w-6" />
     </div>
   );
 }
