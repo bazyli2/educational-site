@@ -16,14 +16,14 @@ function Banner() {
 function Logo() {
   return (
     <div className="rounded-lg bg-orange-50 p-1.5">
-      <LogoShape className="w-8" />
+      <LogoShape className="h-8 w-8 overflow-hidden" />
     </div>
   );
 }
 
 function NavBar() {
   return (
-    <nav className="flex justify-between py-4">
+    <nav className="flex items-center justify-between py-4">
       <Logo />
       <div className="flex items-center gap-5">
         <Link href="/sign-up" className="text-sm">
