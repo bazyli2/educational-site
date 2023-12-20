@@ -1,8 +1,9 @@
-export function LogoShape() {
+import { SVGAttributes } from "react";
+
+export function LogoShape(props: SVGAttributes<SVGSVGElement>) {
   return (
     <svg
-      width="40"
-      height="41"
+      {...props}
       viewBox="0 0 40 41"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
