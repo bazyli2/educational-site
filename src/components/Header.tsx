@@ -4,9 +4,9 @@ import { NavLink } from "./NavLInk";
 
 function Banner() {
   return (
-    <div className="flex items-center justify-center gap-6 rounded-lg bg-orange-50 py-5  text-white-100">
+    <div className="flex items-center justify-center gap-6 rounded-lg bg-orange-50 px-4 py-2 text-sm  text-white-100">
       Free Courses 🌟 Sale Ends Soon, Get It Now
-      <ArrowRight className="w-6" />
+      <ArrowRight className="w-5" />
     </div>
   );
 }
@@ -46,7 +46,7 @@ export function Header() {
   return (
     <header className="px-5 pt-5">
       <Banner />
-      <NavBar />
+      {/* <NavBar /> */}
     </header>
   );
 }
