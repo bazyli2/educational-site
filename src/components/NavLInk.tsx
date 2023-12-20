@@ -16,7 +16,7 @@ export function NavLink(props: ComponentProps<typeof Link>) {
     <Link
       {...props}
       className={cn(
-        "cursor-pointer text-lg transition-all duration-200 ease-in-out",
+        "cursor-pointer text-sm transition-all duration-200 ease-in-out",
         { "rounded-lg bg-white-95 px-5 py-3": active },
         props.className,
       )}
