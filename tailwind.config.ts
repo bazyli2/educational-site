@@ -2,7 +2,8 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/_pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/icons/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
@@ -36,8 +37,10 @@ const config: Config = {
         99: "#FCFCFD",
         100: "#ffffff",
       },
+      current: "currentColor"
     },
   },
   plugins: [],
 };
+
 export default config;

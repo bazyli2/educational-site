@@ -46,7 +46,7 @@ function NavBar() {
 
 function Links() {
   return (
-    <ul className="flex hidden items-center gap-6 md:flex">
+    <ul className="hidden items-center gap-6 md:flex">
       <NavLink href="/">Home</NavLink>
       <NavLink href="/courses">Courses</NavLink>
       <NavLink href="/about-us">About us</NavLink>
